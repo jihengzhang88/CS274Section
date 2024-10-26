@@ -146,8 +146,7 @@ class NavigatorNode(BaseNavigator):
         for i in range(ts_n-1):
             ts[i+1] = np.linalg.norm(path[i+1] - path[i]) / v_desired 
             ts[i+1] = ts[i+1] + ts[i]
-        # print(ts)
-        # print(path[: ,0])
+
         path_x_spline = splrep(ts, path[: ,0], k=3, s=spline_alpha)
         path_y_spline = splrep(ts, path[: ,1], k=3, s=spline_alpha)
         ###### YOUR CODE END HERE ######
