@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 
 # Import necessary ROS2 packages
-import rclpy
-from rclpy.node import Node
+import rclpy # type: ignore
 
 # Import specific utilities from the asl_tb3_lib library
 import numpy as np
 from asl_tb3_lib.navigation import BaseNavigator, TrajectoryPlan
 from asl_tb3_msgs.msg import TurtleBotState, TurtleBotControl
 from asl_tb3_lib.math_utils import wrap_angle
-from asl_tb3_lib.tf_utils import quaternion_to_yaw
 from asl_tb3_lib.grids import StochOccupancyGrid2D
 from scipy.interpolate import splev, splrep
 from P1_astar import AStar
