@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import rclpy
+import rclpy # type: ignore
 from asl_tb3_lib.control import BaseController
 from asl_tb3_msgs.msg import TurtleBotControl
-from std_msgs.msg import Bool
+from std_msgs.msg import Bool # type: ignore
 
 class PerceptionController(BaseController):
     def __init__(self, node_name = "perception_controller") -> None:
