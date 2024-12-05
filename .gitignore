@@ -82,7 +82,6 @@ target/
 profile_default/
 ipython_config.py
 
-src/section/autonomy_repo/section6_bags/
 *.png
 *.yaml
 *.db3
